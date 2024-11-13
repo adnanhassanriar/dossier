@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adnan Hassan - Professional Experience, Education, Certifications, Projects">
+    <title>Adnan Hassan - Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* White Background */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background: linear-gradient(to right, rgba(70, 0, 86, 0.8), rgba(70, 0, 86, 0.5)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 0;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-buttons {
+            margin-top: 20px;
+        }
+
+        .header-buttons a {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #460056; /* Dark Purple Color */
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-buttons a:hover {
+            background-color: #3d0046; /* Lighter Dark Purple for hover */
+        }
+
+        section.container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .badge-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .badge-section h2 {
+            font-size: 28px;
+            color: #34495e; /* Dark Gray */
+        }
+
+        .badge-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+
+        .badge {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #460056; /* Dark Purple Color */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .badge:hover {
+            transform: scale(1.1);
+        }
+
+        .badge img {
+            width: 80px;
+            height: 80px;
+        }
+
+        footer {
+            background-color: #460056; /* Dark Purple Color */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .certification-description {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007bff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #007bff; /* Blue Button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056z3; /* Darker Blue for hover */
+        }
+
+        .contact-section {
+            background-color: #f8f8f8; /* Light Gray */
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 28px;
+            color: #460056; /* Dark Purple Color */
+            text-align: center;
+        }
+
+        .contact-details {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+        }
+
+        .contact-details a {
+            color: #460056; /* Dark Purple Color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            color: #3d0046; /* Lighter Dark Purple for hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile-image">
+            <img src="https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1" alt="Profile Image">
+        </div>
+        <h1>Adnan Hassan</h1>
+        <p>DevOps Engineer & Network Engineer</p>
+        <div class="header-buttons">
+            <a href="#about-me">About Me</a>
+            <a href="#contact">Contact</a>
+            <a href="#certifications">Certifications</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="profile-info">
+            <div class="profile-text">
+                <h2 id="about-me">About Me</h2>
+                <p style="text-align: justify;">I'm a passionate and experienced DevOps Engineer with expertise in cloud technologies, infrastructure automation, and network management. I specialize in automating infrastructure, optimizing CI/CD pipelines, and leveraging cloud-native tools to enhance scalability, security, and operational efficiency. Currently working at SuDo Consultants, I am responsible for managing and automating cloud infrastructure while ensuring high system availability and performance.</p>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="profile-text">
+                <h2 id="experience">Professional Experience</h2>
+                 <p style="text-align: justify;"><strong>As an Associate DevOps professional, I have streamlined and automated development, testing, and deployment processes for multiple client projects, improving both speed and quality. I have designed and implemented CI/CD pipelines using GitLab and Jenkins, ensuring efficient and reliable deployments. My expertise in managing infrastructure as code (IaC) using Terraform and Ansible has enabled seamless automation of cloud infrastructure provisioning, enhancing scalability and reliability.
+
+In my role, I’ve been responsible for ensuring the stability and scalability of applications deployed on AWS, optimizing cloud resources to balance performance and cost. By automating manual processes, I’ve significantly reduced deployment times, thereby increasing efficiency. I’ve also collaborated closely with development teams, troubleshooting and resolving complex issues to ensure smooth project delivery. My hands-on experience with Docker and Kubernetes has allowed me to lead efforts in containerizing applications, improving portability and scalability across various environments.
+
+Additionally, I have a solid background in network management from my time working in the banking and media sectors. I have managed and maintained network infrastructures, ensuring minimal downtime and optimal performance. By configuring and troubleshooting network devices and implementing robust security measures, I contributed to safeguarding critical systems. I’ve also gained significant experience in customer service, providing technical support for internet service providers, troubleshooting connectivity and billing issues while ensuring high levels of customer satisfaction.
+
+Throughout my career, I’ve stayed up-to-date with the latest technologies and trends, constantly seeking ways to improve system performance, security, and availability. I have contributed to knowledge-sharing sessions and technical documentation, fostering a culture of continuous learning within the teams I’ve worked with. My proactive approach to problem-solving has consistently helped deliver successful projects on time and within budget.</strong></p>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div id="certifications">
+            <h2>Certifications</h2>
+
+            <button onclick="toggleDescription('aws-well-architected')">AWS Well-Architected Proficient</button>
+            <div id="aws-well-architected" class="certification-description">
+                <p>Description: This certification demonstrates expertise in designing and deploying secure, high-performing, and cost-effective systems on AWS...</p>
+            </div>
+
+            <button onclick="toggleDescription('aws-solution-architect')">AWS Solution Architect – Associate</button>
+            <div id="aws-solution-architect" class="certification-description">
+                <p>Description: This certification focuses on designing distributed applications and systems on the AWS platform...</p>
+            </div>
+
+            <button onclick="toggleDescription('aws-cloud-practitioner')">AWS Certified Cloud Practitioner</button>
+            <div id="aws-cloud-practitioner" class="certification-description">
+                <p>Description: This entry-level certification demonstrates an overall understanding of AWS Cloud, its global infrastructure...</p>
+            </div>
+
+            <button onclick="toggleDescription('ccna-networks')">CCNA: Introduction to Networks</button>
+            <div id="ccna-networks" class="certification-description">
+                <p>Description: This certification is part of Cisco’s CCNA track and focuses on foundational networking knowledge...</p>
+            </div>
+
+            <button onclick="toggleDescription('ccna-routing')">CCNA: Switching, Routing, and Wireless Essentials</button>
+            <div id="ccna-routing" class="certification-description">
+                <p>Description: This certification focuses on the essentials of switching, routing, and wireless technologies...</p>
+            </div>
+
+            <button onclick="toggleDescription('azure-fundamentals')">Microsoft Certified: Azure Fundamentals</button>
+            <div id="azure-fundamentals" class="certification-description">
+                <p>Description: This certification demonstrates foundational knowledge of Microsoft Azure services, cloud concepts...</p>
+            </div>
+
+            <button onclick="toggleDescription('juniper-sec')">Juniper Networks Certified Associate, Security (JNCIA-SEC)</button>
+            <div id="juniper-sec" class="certification-description">
+                <p>Description: This certification validates knowledge of networking security fundamentals and how to secure a Juniper Networks device...</p>
+            </div>
+
+            <button onclick="toggleDescription('juniper-cloud')">Juniper Networks Certified Associate, Cloud (JNCIA-Cloud)</button>
+            <div id="juniper-cloud" class="certification-description">
+                <p>Description: This certification focuses on Juniper’s cloud solutions, including understanding the cloud ecosystem and deployment practices...</p>
+            </div>
+
+            <button onclick="toggleDescription('python-essentials')">Python Essentials</button>
+            <div id="python-essentials" class="certification-description">
+                <p>Description: This certification provides foundational knowledge of Python programming, including syntax, functions, and libraries...</p>
+            </div>
+
+            <button onclick="toggleDescription('aws-sales')">AWS Sales Accreditation</button>
+            <div id="aws-sales" class="certification-description">
+                <p>Description: This accreditation is designed for technical roles and focuses on AWS architecture and technology...</p>
+            </div>
+        </div>
+
+        <!-- Badge Section -->
+        <div class="badge-section">
+            <h2>Certifications Badges</h2>
+            <div class="badge-container">
+                <div class="badge">
+                    <img src="https://images.credly.com/size/340x340/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="AWS Well-Architected">
+                </div>
+                <div class="badge">
+                    <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Solutions-Architect-Associate_badge_150x150.e359ae4a6d4d82c3e31d4f9104c8d389b56a2423.png" alt="AWS Solution Architect">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png" alt="CCNA Networks">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png" alt="CCNA Routing & Switching">
+                </div>
+                <div class="badge">
+                    <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Azure Fundamentals">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/c61cfe43-7e75-4636-818d-88b47e9a2b4c/L_01_asso_JNCIA-SEC.png" alt="JNCIA-SEC">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/746fd41e-5653-4624-b7f8-eaa4b8645e78/L_01_asso_JNCIA-Cloud.png" alt="JNCIA-Cloud">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/80x80/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png" alt="Python Essentials">
+                </div>
+                <div class="badge">
+                    <img src="https://images.credly.com/size/110x110/images/a253b994-caa6-4dd1-bf0e-434dd012b1f6/image.png" alt="AWS Sales Accreditation">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:adnan94hassan@gmail.com">adnan94hassan@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adnan Hassan</p>
+    </footer>
+
+    <script>
+        function toggleDescription(certificationId) {
+            const description = document.getElementById(certificationId);
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
