@@ -4,49 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adnan Hassan - Professional Experience, Education, Certifications, Projects">
-    <title>Adnan Hassan - Profile</title>
+    <meta name="description" content="Adnan Hassan - DevOps Engineer Portfolio">
+    <title>Adnan Hassan - DevOps Portfolio</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #ffffff; /* White Background */
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         header {
-            position: relative;
-            background: linear-gradient(to right, rgba(70, 0, 86, 0.8), rgba(70, 0, 86, 0.5)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
+            background: linear-gradient(to right, rgba(70, 0, 86, 0.9), rgba(70, 0, 86, 0.6)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 0;
+            padding: 100px 20px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 48px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 50px;
             margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
         }
 
         header p {
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: 10px;
+            font-size: 20px;
+            margin: 10px 0 20px;
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            margin: 20px auto;
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             overflow: hidden;
-            border: 5px solid #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .profile-image img {
@@ -55,291 +52,237 @@
             object-fit: cover;
         }
 
-        .header-buttons {
-            margin-top: 20px;
-        }
-
         .header-buttons a {
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 16px;
             color: #fff;
-            background-color: #460056; /* Dark Purple Color */
+            background-color: #460056;
             text-decoration: none;
             border-radius: 5px;
-            margin: 5px;
+            margin: 0 10px;
             transition: background-color 0.3s ease;
         }
 
         .header-buttons a:hover {
-            background-color: #3d0046; /* Lighter Dark Purple for hover */
+            background-color: #5a0070;
         }
 
-        section.container {
-            max-width: 1200px;
+        .container {
+            max-width: 1100px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        .badge-section {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .badge-section h2 {
+        h2 {
             font-size: 28px;
-            color: #34495e; /* Dark Gray */
+            color: #460056;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #460056;
+            padding-bottom: 5px;
         }
 
-        .badge-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 20px;
-            justify-items: center;
-            margin-top: 30px;
-        }
-
-        .badge {
-            width: 100px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #460056; /* Dark Purple Color */
+        .intro, .projects, .certifications, .contact {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .badge:hover {
-            transform: scale(1.1);
+        .project-item {
+            margin-bottom: 30px;
         }
 
-        .badge img {
-            width: 80px;
-            height: 80px;
+        .project-item h3 {
+            font-size: 22px;
+            color: #34495e;
+            margin: 0 0 10px;
+        }
+
+        .project-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .project-item ul {
+            list-style-type: disc;
+            margin: 10px 0 0 20px;
+            padding-left: 10px;
+        }
+
+        .certifications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .certifications li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        .certifications li strong {
+            color: #460056;
+        }
+
+        .contact {
+            text-align: center; /* Center-align the entire contact section */
+        }
+
+        .contact p {
+            margin: 15px 0; /* Increased spacing for better readability */
+            font-size: 16px;
+        }
+
+        .contact a {
+            color: #460056;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #5a0070;
         }
 
         footer {
-            background-color: #460056; /* Dark Purple Color */
+            background-color: #460056;
             color: white;
-            padding: 10px 0;
             text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         footer p {
             margin: 0;
+            font-size: 14px;
         }
 
-        .certification-description {
-            display: none;
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #007bff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
 
-        button {
-            padding: 10px;
-            margin: 5px;
-            background-color: #007bff; /* Blue Button */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+            header p {
+                font-size: 18px;
+            }
 
-        button:hover {
-            background-color: #0056z3; /* Darker Blue for hover */
-        }
+            .header-buttons a {
+                display: inline-block;
+                margin: 5px;
+            }
 
-        .contact-section {
-            background-color: #f8f8f8; /* Light Gray */
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-section h2 {
-            font-size: 28px;
-            color: #460056; /* Dark Purple Color */
-            text-align: center;
-        }
-
-        .contact-details {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .contact-details p {
-            margin: 10px 0;
-        }
-
-        .contact-details a {
-            color: #460056; /* Dark Purple Color */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-details a:hover {
-            color: #3d0046; /* Lighter Dark Purple for hover */
+            .container {
+                padding: 0 15px;
+            }
         }
     </style>
 </head>
 
 <body>
-
     <header>
         <div class="profile-image">
-            <img src="https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1" alt="Profile Image">
+            <img src="https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1" alt="Adnan Hassan">
         </div>
         <h1>Adnan Hassan</h1>
-        <p>DevOps Engineer & Network Engineer</p>
+        <p>Certified DevOps Engineer | Cloud & Automation Specialist</p>
         <div class="header-buttons">
-            <a href="#about-me">About Me</a>
-            <a href="#contact">Contact</a>
+            <a href="#intro">Introduction</a>
+            <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
         </div>
     </header>
 
     <section class="container">
-        <div class="profile-info">
-            <div class="profile-text">
-                <h2 id="about-me">About Me</h2>
-                <p style="text-align: justify;">I'm a passionate and experienced DevOps Engineer with expertise in cloud technologies, infrastructure automation, and network management. I specialize in automating infrastructure, optimizing CI/CD pipelines, and leveraging cloud-native tools to enhance scalability, security, and operational efficiency. Currently working at SuDo Consultants, I am responsible for managing and automating cloud infrastructure while ensuring high system availability and performance.</p>
+        <div class="intro" id="intro">
+            <h2>Introduction</h2>
+            <p>As a certified DevOps Engineer, I specialize in implementing and optimizing cloud-based solutions. My expertise includes Infrastructure as Code (IaC), CI/CD pipelines, containerization, and comprehensive cloud infrastructure management. Holding certifications from AWS, Microsoft, Juniper, and Cisco, I am adept at addressing complex technical challenges with effective solutions. Below is an overview of key projects that demonstrate my ability to deliver scalable, reliable, and automated solutions tailored to diverse business needs.</p>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>Key Projects</h2>
+            <div class="project-item">
+                <h3>OpenVPN Setup with Azure AD Authentication</h3>
+                <p><strong>Objective:</strong> Establish a self-hosted OpenVPN on an AWS EC2 instance integrated with Azure AD for secure user authentication.</p>
+                <p><strong>Technologies Used:</strong> OpenVPN, Azure AD, Ubuntu, Apache2, AWS EC2, Bash scripting</p>
+                <ul>
+                    <li>Configured OpenVPN to authenticate users via Azure AD.</li>
+                    <li>Developed a web interface to guide users through VPN setup instructions and file downloads.</li>
+                    <li>Automated OpenVPN file generation using Bash and Docker commands.</li>
+                    <li>Enhanced secure access to internal resources while maintaining user-friendly onboarding.</li>
+                </ul>
             </div>
-
-            <!-- Experience Section -->
-            <div class="profile-text">
-                <h2 id="experience">Professional Experience</h2>
-                 <p style="text-align: justify;"><strong>As an Associate DevOps professional, I have streamlined and automated development, testing, and deployment processes for multiple client projects, improving both speed and quality. I have designed and implemented CI/CD pipelines using GitLab and Jenkins, ensuring efficient and reliable deployments. My expertise in managing infrastructure as code (IaC) using Terraform and Ansible has enabled seamless automation of cloud infrastructure provisioning, enhancing scalability and reliability.
-
-In my role, I’ve been responsible for ensuring the stability and scalability of applications deployed on AWS, optimizing cloud resources to balance performance and cost. By automating manual processes, I’ve significantly reduced deployment times, thereby increasing efficiency. I’ve also collaborated closely with development teams, troubleshooting and resolving complex issues to ensure smooth project delivery. My hands-on experience with Docker and Kubernetes has allowed me to lead efforts in containerizing applications, improving portability and scalability across various environments.
-
-Additionally, I have a solid background in network management from my time working in the banking and media sectors. I have managed and maintained network infrastructures, ensuring minimal downtime and optimal performance. By configuring and troubleshooting network devices and implementing robust security measures, I contributed to safeguarding critical systems. I’ve also gained significant experience in customer service, providing technical support for internet service providers, troubleshooting connectivity and billing issues while ensuring high levels of customer satisfaction.
-
-Throughout my career, I’ve stayed up-to-date with the latest technologies and trends, constantly seeking ways to improve system performance, security, and availability. I have contributed to knowledge-sharing sessions and technical documentation, fostering a culture of continuous learning within the teams I’ve worked with. My proactive approach to problem-solving has consistently helped deliver successful projects on time and within budget.</strong></p>
+            <div class="project-item">
+                <h3>Terraform CI/CD Pipeline for AWS Infrastructure</h3>
+                <p><strong>Objective:</strong> Automate infrastructure deployment and updates using Terraform and AWS CodePipeline.</p>
+                <p><strong>Technologies Used:</strong> Terraform, AWS CodePipeline, CodeBuild, CodeCommit, S3, IAM</p>
+                <ul>
+                    <li>Designed and implemented a Terraform CI/CD pipeline with stages for validation, planning, and application.</li>
+                    <li>Automated S3 bucket creation for artifact storage and state files.</li>
+                    <li>Enabled logging and error tracking via CloudWatch and CloudTrail for seamless debugging.</li>
+                    <li>Facilitated manual approval stages for high-priority deployments.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Containerization and Monitoring with Docker and Prometheus</h3>
+                <p><strong>Objective:</strong> Modernize applications by adopting containerization and improving system observability.</p>
+                <p><strong>Technologies Used:</strong> Docker, Kubernetes, Prometheus, Grafana, Bash</p>
+                <ul>
+                    <li>Containerized legacy applications to improve portability and scalability.</li>
+                    <li>Implemented monitoring dashboards using Prometheus and Grafana for real-time performance tracking.</li>
+                    <li>Reduced system downtime by 25% through proactive alerting and issue resolution.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>WordPress Site Migration on AWS EC2</h3>
+                <p><strong>Objective:</strong> Migrate a WordPress site to a new server while ensuring minimal downtime.</p>
+                <p><strong>Technologies Used:</strong> Ansible, AWS EC2, Vivaldi Plugin, Apache</p>
+                <ul>
+                    <li>Automated WordPress setup using Ansible and Bash scripts.</li>
+                    <li>Successfully migrated WordPress files and databases with zero data loss.</li>
+                    <li>Improved site performance by optimizing server configurations.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>MPLS-Based Communication Network</h3>
+                <p><strong>Objective:</strong> Implement MPLS for efficient data and voice communication over simulated and physical networks.</p>
+                <p><strong>Technologies Used:</strong> Cisco Routers, GNS3, VoIP</p>
+                <ul>
+                    <li>Configured MPLS on Cisco 2800 and 2811 routers and a 3500 Catalyst Layer 2 switch.</li>
+                    <li>Integrated VoIP systems for seamless communication across locations.</li>
+                    <li>Demonstrated MPLS benefits in a final-year engineering project.</li>
+                </ul>
             </div>
         </div>
 
-        <!-- Certifications Section -->
-        <div id="certifications">
+        <div class="certifications" id="certifications">
             <h2>Certifications</h2>
-
-            <button onclick="toggleDescription('aws-well-architected')">AWS Well-Architected Proficient</button>
-            <div id="aws-well-architected" class="certification-description">
-                <p>Description: This certification demonstrates expertise in designing and deploying secure, high-performing, and cost-effective systems on AWS...</p>
-            </div>
-
-            <button onclick="toggleDescription('aws-solution-architect')">AWS Solution Architect – Associate</button>
-            <div id="aws-solution-architect" class="certification-description">
-                <p>Description: This certification focuses on designing distributed applications and systems on the AWS platform...</p>
-            </div>
-
-            <button onclick="toggleDescription('aws-cloud-practitioner')">AWS Certified Cloud Practitioner</button>
-            <div id="aws-cloud-practitioner" class="certification-description">
-                <p>Description: This entry-level certification demonstrates an overall understanding of AWS Cloud, its global infrastructure...</p>
-            </div>
-
-            <button onclick="toggleDescription('ccna-networks')">CCNA: Introduction to Networks</button>
-            <div id="ccna-networks" class="certification-description">
-                <p>Description: This certification is part of Cisco’s CCNA track and focuses on foundational networking knowledge...</p>
-            </div>
-
-            <button onclick="toggleDescription('ccna-routing')">CCNA: Switching, Routing, and Wireless Essentials</button>
-            <div id="ccna-routing" class="certification-description">
-                <p>Description: This certification focuses on the essentials of switching, routing, and wireless technologies...</p>
-            </div>
-
-            <button onclick="toggleDescription('azure-fundamentals')">Microsoft Certified: Azure Fundamentals</button>
-            <div id="azure-fundamentals" class="certification-description">
-                <p>Description: This certification demonstrates foundational knowledge of Microsoft Azure services, cloud concepts...</p>
-            </div>
-
-            <button onclick="toggleDescription('juniper-sec')">Juniper Networks Certified Associate, Security (JNCIA-SEC)</button>
-            <div id="juniper-sec" class="certification-description">
-                <p>Description: This certification validates knowledge of networking security fundamentals and how to secure a Juniper Networks device...</p>
-            </div>
-
-            <button onclick="toggleDescription('juniper-cloud')">Juniper Networks Certified Associate, Cloud (JNCIA-Cloud)</button>
-            <div id="juniper-cloud" class="certification-description">
-                <p>Description: This certification focuses on Juniper’s cloud solutions, including understanding the cloud ecosystem and deployment practices...</p>
-            </div>
-
-            <button onclick="toggleDescription('python-essentials')">Python Essentials</button>
-            <div id="python-essentials" class="certification-description">
-                <p>Description: This certification provides foundational knowledge of Python programming, including syntax, functions, and libraries...</p>
-            </div>
-
-            <button onclick="toggleDescription('aws-sales')">AWS Sales Accreditation</button>
-            <div id="aws-sales" class="certification-description">
-                <p>Description: This accreditation is designed for technical roles and focuses on AWS architecture and technology...</p>
-            </div>
+            <ul>
+                <li><strong>AWS Certified DevOps Engineer – Professional (In Progress)</strong><br>Amazon Web Services (AWS)<br>Advanced-level certification focusing on DevOps practices, CI/CD, infrastructure automation, and monitoring on AWS.</li>
+                <li><strong>AWS Certified Solutions Architect – Associate</strong><br>Amazon Web Services (AWS)<br>Expertise in designing scalable, resilient, and secure cloud-based solutions.</li>
+                <li><strong>AWS Certified Cloud Practitioner</strong><br>Amazon Web Services (AWS)<br>Foundational certification covering core AWS services, pricing models, and cloud best practices.</li>
+                <li><strong>Microsoft Azure Fundamentals (AZ-900)</strong><br>Microsoft<br>Validates foundational knowledge of Azure cloud services and their applications.</li>
+                <li><strong>Juniper Networks Certified Associate – Security (JNCIA-SEC)</strong><br>Juniper Networks<br>Covers fundamental network security concepts and Juniper security products.</li>
+                <li><strong>Juniper Networks Certified Associate – Cloud (JNCIA-CLOUD)</strong><br>Juniper Networks<br>Focuses on cloud concepts and Juniper cloud solutions.</li>
+                <li><strong>Cisco Certified Network Associate (CCNA)</strong><br>Cisco<br>Knowledge in networking fundamentals, IP connectivity, and network security.</li>
+            </ul>
         </div>
 
-        <!-- Badge Section -->
-        <div class="badge-section">
-            <h2>Certifications Badges</h2>
-            <div class="badge-container">
-                <div class="badge">
-                    <img src="https://images.credly.com/size/340x340/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="AWS Well-Architected">
-                </div>
-                <div class="badge">
-                    <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Solutions-Architect-Associate_badge_150x150.e359ae4a6d4d82c3e31d4f9104c8d389b56a2423.png" alt="AWS Solution Architect">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png" alt="CCNA Networks">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png" alt="CCNA Routing & Switching">
-                </div>
-                <div class="badge">
-                    <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Azure Fundamentals">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/c61cfe43-7e75-4636-818d-88b47e9a2b4c/L_01_asso_JNCIA-SEC.png" alt="JNCIA-SEC">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/746fd41e-5653-4624-b7f8-eaa4b8645e78/L_01_asso_JNCIA-Cloud.png" alt="JNCIA-Cloud">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/80x80/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png" alt="Python Essentials">
-                </div>
-                <div class="badge">
-                    <img src="https://images.credly.com/size/110x110/images/a253b994-caa6-4dd1-bf0e-434dd012b1f6/image.png" alt="AWS Sales Accreditation">
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact" class="contact-section">
+        <div class="contact" id="contact">
             <h2>Contact</h2>
-            <div class="contact-details">
-                <p>Email: <a href="mailto:adnan94hassan@gmail.com">adnan94hassan@gmail.com</a></p>
-            </div>
+            <p>Email: <a href="mailto:adnan94hassan@gmail.com">adnan94hassan@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/adnanhassanriar" target="_blank">linkedin.com/in/adnanhassanriar</a></p>
+            <p>GitHub: <a href="https://github.com/adnanhassanriar" target="_blank">github.com/adnanhassanriar</a></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Adnan Hassan</p>
+        <p>© 2025 Adnan Hassan | DevOps Engineer</p>
     </footer>
-
-    <script>
-        function toggleDescription(certificationId) {
-            const description = document.getElementById(certificationId);
-            if (description.style.display === "none" || description.style.display === "") {
-                description.style.display = "block";
-            } else {
-                description.style.display = "none";
-            }
-        }
-    </script>
-
 </body>
 
 </html>
