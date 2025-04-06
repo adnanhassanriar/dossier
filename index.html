@@ -6,44 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Adnan Hassan - DevOps Engineer Portfolio">
     <title>Adnan Hassan - DevOps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.8;
+            color: #333;
         }
 
         header {
-            background: linear-gradient(to right, rgba(70, 0, 86, 0.9), rgba(70, 0, 86, 0.6)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
+            background: linear-gradient(to right, rgba(70, 0, 86, 0.95), rgba(120, 0, 150, 0.65)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         header h1 {
-            font-size: 50px;
+            font-size: 54px;
+            font-weight: 600;
             margin: 0;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         }
 
         header p {
-            font-size: 20px;
-            margin: 10px 0 20px;
+            font-size: 22px;
+            font-weight: 300;
+            margin: 15px 0 25px;
         }
 
         .profile-image {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 0 auto 25px;
+            border: 5px solid #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
         }
 
         .profile-image img {
@@ -53,61 +66,100 @@
         }
 
         .header-buttons a {
-            padding: 12px 25px;
+            padding: 14px 30px;
             font-size: 16px;
+            font-weight: 400;
             color: #fff;
             background-color: #460056;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            transition: background-color 0.3s ease;
+            border-radius: 25px;
+            margin: 0 12px;
+            transition: all 0.3s ease;
         }
 
         .header-buttons a:hover {
-            background-color: #5a0070;
+            background-color: #6b0085;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .container {
-            max-width: 1100px;
-            margin: 40px auto;
+            max-width: 1200px;
+            margin: 50px auto;
             padding: 0 20px;
         }
 
         h2 {
-            font-size: 28px;
+            font-size: 32px;
+            font-weight: 600;
             color: #460056;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #460056;
-            padding-bottom: 5px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #460056;
+            padding-bottom: 8px;
         }
 
         .intro, .projects, .certifications, .contact {
             background-color: #fff;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .intro {
+            animation-delay: 0.1s;
+        }
+
+        .projects {
+            animation-delay: 0.2s;
+        }
+
+        .certifications {
+            animation-delay: 0.3s;
+        }
+
+        .contact {
+            animation-delay: 0.4s;
         }
 
         .project-item {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+            padding: 20px;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
 
         .project-item h3 {
-            font-size: 22px;
+            font-size: 24px;
+            font-weight: 600;
             color: #34495e;
-            margin: 0 0 10px;
+            margin: 0 0 12px;
         }
 
         .project-item p {
-            margin: 5px 0;
-            color: #555;
+            margin: 8px 0;
+            color: #666;
         }
 
         .project-item ul {
             list-style-type: disc;
-            margin: 10px 0 0 20px;
+            margin: 12px 0 0 25px;
             padding-left: 10px;
+            color: #555;
         }
 
         .certifications ul {
@@ -116,54 +168,62 @@
         }
 
         .certifications li {
-            margin-bottom: 15px;
-            padding: 15px;
-            background-color: #f8f8f8;
-            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .certifications li:hover {
+            background-color: #f1f1f1;
         }
 
         .certifications li strong {
             color: #460056;
+            font-weight: 600;
         }
 
         .contact {
-            text-align: center; /* Center-align the entire contact section */
+            text-align: center;
         }
 
         .contact p {
-            margin: 15px 0; /* Increased spacing for better readability */
-            font-size: 16px;
+            margin: 20px 0;
+            font-size: 17px;
         }
 
         .contact a {
             color: #460056;
             text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
 
         .contact a:hover {
-            color: #5a0070;
+            color: #fff;
+            background-color: #460056;
         }
 
         footer {
             background-color: #460056;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
+            padding: 20px 0;
             width: 100%;
         }
 
         footer p {
             margin: 0;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 36px;
+                font-size: 40px;
             }
 
             header p {
@@ -172,11 +232,20 @@
 
             .header-buttons a {
                 display: inline-block;
-                margin: 5px;
+                margin: 8px;
+                padding: 12px 20px;
             }
 
             .container {
                 padding: 0 15px;
+            }
+
+            .project-item, .intro, .projects, .certifications, .contact {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 28px;
             }
         }
     </style>
