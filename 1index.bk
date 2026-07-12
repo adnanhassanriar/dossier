@@ -34,23 +34,17 @@
         </div>
       </div>
       <div class="sys-line"><span class="dim">system:</span> <span class="ok">online</span></div>
-      <div class="sys-line"><span class="dim">based:</span> Lahore, PK</div>
-      <div class="region-chips">
-        <span class="region-chip">🇵🇰 Pakistan</span>
-        <span class="region-chip">🇬🇧 UK · Remote</span>
-        <span class="region-chip">🇦🇪 UAE</span>
-      </div>
+      <div class="sys-line"><span class="dim">region:</span> Lahore, PK</div>
     </div>
 
     <nav class="nav" aria-label="Primary">
       <a href="#overview" class="nav-link active" data-section="overview"><span class="nav-idx">01</span>Overview</a>
       <a href="#experience" class="nav-link" data-section="experience"><span class="nav-idx">02</span>Experience</a>
-      <a href="#techstack" class="nav-link" data-section="techstack"><span class="nav-idx">03</span>Tech Stack</a>
-      <a href="#projects" class="nav-link" data-section="projects"><span class="nav-idx">04</span>Projects</a>
-      <a href="#certifications" class="nav-link" data-section="certifications"><span class="nav-idx">05</span>Certifications</a>
-      <a href="#education" class="nav-link" data-section="education"><span class="nav-idx">06</span>Education</a>
-      <a href="#achievements" class="nav-link" data-section="achievements"><span class="nav-idx">07</span>Achievements</a>
-      <a href="#contact" class="nav-link" data-section="contact"><span class="nav-idx">08</span>Contact</a>
+      <a href="#projects" class="nav-link" data-section="projects"><span class="nav-idx">03</span>Projects</a>
+      <a href="#certifications" class="nav-link" data-section="certifications"><span class="nav-idx">04</span>Certifications</a>
+      <a href="#education" class="nav-link" data-section="education"><span class="nav-idx">05</span>Education</a>
+      <a href="#achievements" class="nav-link" data-section="achievements"><span class="nav-idx">06</span>Achievements</a>
+      <a href="#contact" class="nav-link" data-section="contact"><span class="nav-idx">07</span>Contact</a>
     </nav>
 
     <div class="sidebar-bottom">
@@ -76,13 +70,6 @@
         and data pipelines. I design, automate, and monitor systems so the people building
         on top of them never have to think about uptime.
       </p>
-
-      <div class="coverage-row">
-        <span class="coverage-label mono dim">remote coverage:</span>
-        <span class="pill pill-region">Pakistan</span>
-        <span class="pill pill-region">United Kingdom</span>
-        <span class="pill pill-region">UAE</span>
-      </div>
 
       <div class="hero-actions">
         <a href="#experience" class="btn btn-primary">View experience</a>
@@ -282,97 +269,10 @@
       </div>
     </section>
 
-    <!-- TECH STACK -->
-    <section id="techstack" class="section">
-      <div class="section-head">
-        <span class="section-idx">03</span>
-        <div>
-          <h2>Tech Stack &amp; Processes</h2>
-          <p class="section-sub">// toolchain --all --grouped</p>
-        </div>
-      </div>
-
-      <div class="stack-groups">
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Cloud &amp; Compute</div>
-          <div class="tag-row">
-            <span class="tag">EC2</span><span class="tag">ECS</span><span class="tag">Lambda</span>
-            <span class="tag">API Gateway</span><span class="tag">S3</span><span class="tag">VPC</span>
-            <span class="tag">Amazon Cognito</span><span class="tag">ALB / ELB</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Data &amp; Storage</div>
-          <div class="tag-row">
-            <span class="tag">RDS</span><span class="tag">Redshift</span><span class="tag">AWS Glue</span>
-            <span class="tag">AWS DMS</span><span class="tag">Step Functions</span><span class="tag">SNS</span>
-            <span class="tag">Secrets Manager</span><span class="tag">KMS</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Infrastructure as Code</div>
-          <div class="tag-row">
-            <span class="tag">Terraform</span><span class="tag">AWS CloudFormation</span>
-            <span class="tag">AWS SAM</span><span class="tag">Ansible</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">CI/CD &amp; Automation</div>
-          <div class="tag-row">
-            <span class="tag">Jenkins</span><span class="tag">GitLab CI/CD</span>
-            <span class="tag">Bitbucket Pipelines</span><span class="tag">Git</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Containers &amp; Virtualization</div>
-          <div class="tag-row">
-            <span class="tag">Docker</span><span class="tag">AWS ECS</span><span class="tag">Proxmox</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Monitoring &amp; Observability</div>
-          <div class="tag-row">
-            <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">CloudWatch</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Security &amp; Networking</div>
-          <div class="tag-row">
-            <span class="tag">pfSense</span><span class="tag">Security Groups</span><span class="tag">SSL / TLS</span>
-            <span class="tag">Let's Encrypt</span><span class="tag">Certbot</span><span class="tag">mTLS</span>
-            <span class="tag">Route53</span><span class="tag">Cloudflare</span><span class="tag">Azure VPN</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Platforms &amp; Hosting</div>
-          <div class="tag-row">
-            <span class="tag">AWS</span><span class="tag">Microsoft Azure</span><span class="tag">DigitalOcean</span>
-            <span class="tag">Linux</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <div class="stack-group-title mono">Application Deployments</div>
-          <div class="tag-row">
-            <span class="tag">Laravel</span><span class="tag">Angular</span><span class="tag">VoIP Systems</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
-        <span class="section-idx">04</span>
+        <span class="section-idx">03</span>
         <div>
           <h2>Key Projects</h2>
           <p class="section-sub">// deployed_services --list</p>
@@ -446,7 +346,7 @@
     <!-- CERTIFICATIONS -->
     <section id="certifications" class="section">
       <div class="section-head">
-        <span class="section-idx">05</span>
+        <span class="section-idx">04</span>
         <div>
           <h2>Certifications</h2>
           <p class="section-sub">// credentials --verified</p>
@@ -502,7 +402,7 @@
     <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="section-head">
-        <span class="section-idx">06</span>
+        <span class="section-idx">05</span>
         <div>
           <h2>Education</h2>
           <p class="section-sub">// background</p>
@@ -522,7 +422,7 @@
     <!-- ACHIEVEMENTS -->
     <section id="achievements" class="section">
       <div class="section-head">
-        <span class="section-idx">07</span>
+        <span class="section-idx">06</span>
         <div>
           <h2>Achievements</h2>
           <p class="section-sub">// milestones --log</p>
@@ -551,7 +451,7 @@
     <!-- CONTACT -->
     <section id="contact" class="section contact-section">
       <div class="section-head">
-        <span class="section-idx">08</span>
+        <span class="section-idx">07</span>
         <div>
           <h2>Contact</h2>
           <p class="section-sub">// open_connection --request</p>
