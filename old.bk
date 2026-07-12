@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adnan Hassan - DevOps Engineer Portfolio">
+    <title>Adnan Hassan - DevOps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, rgba(70, 0, 86, 0.95), rgba(120, 0, 150, 0.65)), url('https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 54px;
+            font-weight: 600;
+            margin: 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 15px 0 25px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 5px solid #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-buttons a {
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            background-color: #460056;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 0 12px;
+            transition: all 0.3s ease;
+        }
+
+        .header-buttons a:hover {
+            background-color: #6b0085;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #460056;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #460056;
+            padding-bottom: 8px;
+        }
+
+        .intro, .projects, .certifications, .contact {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .intro {
+            animation-delay: 0.1s;
+        }
+
+        .projects {
+            animation-delay: 0.2s;
+        }
+
+        .certifications {
+            animation-delay: 0.3s;
+        }
+
+        .contact {
+            animation-delay: 0.4s;
+        }
+
+        .project-item {
+            margin-bottom: 35px;
+            padding: 20px;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #34495e;
+            margin: 0 0 12px;
+        }
+
+        .project-item p {
+            margin: 8px 0;
+            color: #666;
+        }
+
+        .project-item ul {
+            list-style-type: disc;
+            margin: 12px 0 0 25px;
+            padding-left: 10px;
+            color: #555;
+        }
+
+        .certifications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .certifications li {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .certifications li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .certifications li strong {
+            color: #460056;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 20px 0;
+            font-size: 17px;
+        }
+
+        .contact a {
+            color: #460056;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #fff;
+            background-color: #460056;
+        }
+
+        footer {
+            background-color: #460056;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .header-buttons a {
+                display: inline-block;
+                margin: 8px;
+                padding: 12px 20px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .project-item, .intro, .projects, .certifications, .contact {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile-image">
+            <img src="https://variety.com/wp-content/uploads/2024/01/Mr-Bean.jpg?w=1000&h=563&crop=1" alt="Adnan Hassan">
+        </div>
+        <h1>Adnan Hassan</h1>
+        <p>Certified DevOps Engineer | Cloud & Automation Specialist</p>
+        <div class="header-buttons">
+            <a href="#intro">Introduction</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="intro" id="intro">
+            <h2>Introduction</h2>
+            <p>As a certified DevOps Engineer, I specialize in implementing and optimizing cloud-based solutions. My expertise includes Infrastructure as Code (IaC), CI/CD pipelines, containerization, and comprehensive cloud infrastructure management. Holding certifications from AWS, Microsoft, Juniper, and Cisco, I am adept at addressing complex technical challenges with effective solutions. Below is an overview of key projects that demonstrate my ability to deliver scalable, reliable, and automated solutions tailored to diverse business needs.</p>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>Key Projects</h2>
+            <div class="project-item">
+                <h3>OpenVPN Setup with Azure AD Authentication</h3>
+                <p><strong>Objective:</strong> Establish a self-hosted OpenVPN on an AWS EC2 instance integrated with Azure AD for secure user authentication.</p>
+                <p><strong>Technologies Used:</strong> OpenVPN, Azure AD, Ubuntu, Apache2, AWS EC2, Bash scripting</p>
+                <ul>
+                    <li>Configured OpenVPN to authenticate users via Azure AD.</li>
+                    <li>Developed a web interface to guide users through VPN setup instructions and file downloads.</li>
+                    <li>Automated OpenVPN file generation using Bash and Docker commands.</li>
+                    <li>Enhanced secure access to internal resources while maintaining user-friendly onboarding.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Terraform CI/CD Pipeline for AWS Infrastructure</h3>
+                <p><strong>Objective:</strong> Automate infrastructure deployment and updates using Terraform and AWS CodePipeline.</p>
+                <p><strong>Technologies Used:</strong> Terraform, AWS CodePipeline, CodeBuild, CodeCommit, S3, IAM</p>
+                <ul>
+                    <li>Designed and implemented a Terraform CI/CD pipeline with stages for validation, planning, and application.</li>
+                    <li>Automated S3 bucket creation for artifact storage and state files.</li>
+                    <li>Enabled logging and error tracking via CloudWatch and CloudTrail for seamless debugging.</li>
+                    <li>Facilitated manual approval stages for high-priority deployments.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Containerization and Monitoring with Docker and Prometheus</h3>
+                <p><strong>Objective:</strong> Modernize applications by adopting containerization and improving system observability.</p>
+                <p><strong>Technologies Used:</strong> Docker, Kubernetes, Prometheus, Grafana, Bash</p>
+                <ul>
+                    <li>Containerized legacy applications to improve portability and scalability.</li>
+                    <li>Implemented monitoring dashboards using Prometheus and Grafana for real-time performance tracking.</li>
+                    <li>Reduced system downtime by 25% through proactive alerting and issue resolution.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>WordPress Site Migration on AWS EC2</h3>
+                <p><strong>Objective:</strong> Migrate a WordPress site to a new server while ensuring minimal downtime.</p>
+                <p><strong>Technologies Used:</strong> Ansible, AWS EC2, Vivaldi Plugin, Apache</p>
+                <ul>
+                    <li>Automated WordPress setup using Ansible and Bash scripts.</li>
+                    <li>Successfully migrated WordPress files and databases with zero data loss.</li>
+                    <li>Improved site performance by optimizing server configurations.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>MPLS-Based Communication Network</h3>
+                <p><strong>Objective:</strong> Implement MPLS for efficient data and voice communication over simulated and physical networks.</p>
+                <p><strong>Technologies Used:</strong> Cisco Routers, GNS3, VoIP</p>
+                <ul>
+                    <li>Configured MPLS on Cisco 2800 and 2811 routers and a 3500 Catalyst Layer 2 switch.</li>
+                    <li>Integrated VoIP systems for seamless communication across locations.</li>
+                    <li>Demonstrated MPLS benefits in a final-year engineering project.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="certifications" id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>AWS Certified DevOps Engineer – Professional (In Progress)</strong><br>Amazon Web Services (AWS)<br>Advanced-level certification focusing on DevOps practices, CI/CD, infrastructure automation, and monitoring on AWS.</li>
+                <li><strong>AWS Certified Solutions Architect – Associate</strong><br>Amazon Web Services (AWS)<br>Expertise in designing scalable, resilient, and secure cloud-based solutions.</li>
+                <li><strong>AWS Certified Cloud Practitioner</strong><br>Amazon Web Services (AWS)<br>Foundational certification covering core AWS services, pricing models, and cloud best practices.</li>
+                <li><strong>Microsoft Azure Fundamentals (AZ-900)</strong><br>Microsoft<br>Validates foundational knowledge of Azure cloud services and their applications.</li>
+                <li><strong>Juniper Networks Certified Associate – Security (JNCIA-SEC)</strong><br>Juniper Networks<br>Covers fundamental network security concepts and Juniper security products.</li>
+                <li><strong>Juniper Networks Certified Associate – Cloud (JNCIA-CLOUD)</strong><br>Juniper Networks<br>Focuses on cloud concepts and Juniper cloud solutions.</li>
+                <li><strong>Cisco Certified Network Associate (CCNA)</strong><br>Cisco<br>Knowledge in networking fundamentals, IP connectivity, and network security.</li>
+            </ul>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:adnan94hassan@gmail.com">adnan94hassan@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/adnanhassanriar" target="_blank">linkedin.com/in/adnanhassanriar</a></p>
+            <p>GitHub: <a href="https://github.com/adnanhassanriar" target="_blank">github.com/adnanhassanriar</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Adnan Hassan | DevOps Engineer</p>
+    </footer>
+</body>
+
+</html>
