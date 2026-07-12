@@ -4,21 +4,21 @@
    =========================================================== */
 
 :root{
-  --bg: #0A0A0B;
-  --bg-panel: #141416;
-  --bg-panel-2: #1B1B1E80;
-  --bg-elevated: #1E1E21;
-  --border: #2C2C30;
-  --border-soft: #1C1C1F;
-  --text: #EDEDEF;
-  --text-dim: #A3A3A9;
-  --text-faint: #6B6B70;
+  --bg: #D6D7DA;
+  --bg-panel: #E9E9EC;
+  --bg-panel-2: #DCDDE080;
+  --bg-elevated: #E1E2E5;
+  --border: #B7B9BE;
+  --border-soft: #C7C8CC;
+  --text: #221217;
+  --text-dim: #5A525A;
+  --text-faint: #857E85;
 
-  --cyan: #2FB350;
-  --cyan-dim: #2FB35026;
-  --amber: #C2455F;
-  --amber-dim: #8C203640;
-  --violet: #C7C9D1;
+  --cyan: #7A1230;
+  --cyan-dim: #7A123026;
+  --amber: #A8791A;
+  --amber-dim: #A8791A26;
+  --violet: #9C2C4A;
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -84,9 +84,9 @@ h1,h2,h3{ font-family: var(--font-display); letter-spacing: -0.01em; }
 }
 .status-dot.small{ width: 6px; height: 6px; }
 @keyframes pulse{
-  0%   { box-shadow: 0 0 0 0 rgba(47,179,80,0.5); }
-  70%  { box-shadow: 0 0 0 8px rgba(47,179,80,0); }
-  100% { box-shadow: 0 0 0 0 rgba(47,179,80,0); }
+  0%   { box-shadow: 0 0 0 0 rgba(122,18,48,0.45); }
+  70%  { box-shadow: 0 0 0 8px rgba(122,18,48,0); }
+  100% { box-shadow: 0 0 0 0 rgba(122,18,48,0); }
 }
 
 .cursor{
@@ -250,7 +250,7 @@ h1,h2,h3{ font-family: var(--font-display); letter-spacing: -0.01em; }
   font-size: 0.78rem;
   color: var(--cyan);
   background: var(--cyan-dim);
-  border: 1px solid rgba(47,179,80,0.3);
+  border: 1px solid rgba(122,18,48,0.3);
   padding: 6px 12px;
   border-radius: 999px;
   margin-bottom: 28px;
@@ -387,7 +387,7 @@ h1,h2,h3{ font-family: var(--font-display); letter-spacing: -0.01em; }
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
-.pill-ok{ background: var(--cyan-dim); color: var(--cyan); border: 1px solid rgba(47,179,80,0.25); }
+.pill-ok{ background: var(--cyan-dim); color: var(--cyan); border: 1px solid rgba(122,18,48,0.25); }
 
 .service-meta{
   display: flex;
@@ -449,7 +449,7 @@ h1,h2,h3{ font-family: var(--font-display); letter-spacing: -0.01em; }
 .tag-current{
   background: var(--amber-dim);
   color: var(--amber);
-  border: 1px solid rgba(140,32,54,0.45);
+  border: 1px solid rgba(168,121,26,0.4);
 }
 .tag{
   font-family: var(--font-mono);
